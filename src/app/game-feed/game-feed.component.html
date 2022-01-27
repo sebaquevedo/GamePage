@@ -1,0 +1,12 @@
+<app-header></app-header>
+<div class="container">
+    <div class="game-card grow col-3" *ngFor="let item of originalDataSource ">
+        <img src="{{item.image}}" alt="">
+        <div class="ribbon-wrapper" *ngIf="item.categories.includes('new')">
+            <div class="ribbon">
+                NEW
+            </div>
+        </div>
+    </div>
+
+</div>
